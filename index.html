@@ -1,0 +1,1708 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HERITAGE & HUE — Handcrafted Goods for Mindful Living</title>
+    <meta
+      name="description"
+      content="Discover bespoke ceramics, vegetable-tanned leathercraft, and heirloom timepieces crafted by master artisans. Sustainable, timeless, and built for generations."
+    />
+    <meta
+      name="keywords"
+      content="handcrafted goods, luxury ceramics, heritage leather, artisanal timepieces, sustainable craft"
+    />
+    <meta name="theme-color" content="#1A1715" />
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://heritageandhue.com/" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              espresso: "#1A1715",
+              "espresso-card": "#231F1C",
+              terracotta: "#C85A32",
+              "terracotta-hover": "#B04A26",
+              parchment: "#F9F6F0",
+              "parchment-muted": "#EFE9DE",
+              moss: "#2B3A2C",
+              brass: "#C3A35C",
+              "brass-light": "#E2C889",
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', "Georgia", "serif"],
+              sans: ['"Plus Jakarta Sans"', "system-ui", "sans-serif"],
+            },
+            animation: {
+              marquee: "marquee 35s linear infinite",
+              "float-gentle": "floatGentle 6s ease-in-out infinite",
+              "pulse-subtle": "pulseSubtle 4s ease-in-out infinite",
+            },
+            keyframes: {
+              marquee: {
+                "0%": { transform: "translateX(0%)" },
+                "100%": { transform: "translateX(-50%)" },
+              },
+              floatGentle: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-6px)" },
+              },
+              pulseSubtle: {
+                "0%, 100%": { opacity: "0.85" },
+                "50%": { opacity: "1" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232B1E19'/><rect x='4' y='4' width='92' height='92' rx='16' fill='none' stroke='%23C18C5D' stroke-width='2' opacity='0.4'/><path d='M32 25V75M32 50H68M68 25V75' stroke='%23F4EBE1' stroke-width='7' stroke-linecap='square'/><path d='M25 35C25 25 32 18 50 18C68 18 75 25 75 35M25 65C25 75 32 82 50 82C68 82 75 75 75 65' stroke='%23C18C5D' stroke-width='3.5' fill='none'/><circle cx='50' cy='50' r='4' fill='%23C18C5D'/></svg>"
+    />
+
+    <!-- JSON-LD SEO Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://heritageandhue.com/#organization",
+            "name": "HERITAGE & HUE",
+            "url": "https://heritageandhue.com",
+            "logo": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=300&q=80",
+            "description": "Bespoke handcrafted home goods and leather accessories made by traditional master artisans."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://heritageandhue.com/#website",
+            "url": "https://heritageandhue.com",
+            "name": "HERITAGE & HUE Artisanal Atelier",
+            "publisher": { "@id": "https://heritageandhue.com/#organization" }
+          },
+          {
+            "@type": "Product",
+            "name": "The Terra Mortar & Pestle Set",
+            "image": "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80",
+            "description": "Hand-carved basalt rock and teakwood mortar and pestle for traditional culinary preparation.",
+            "sku": "HH-CER-08",
+            "brand": {
+              "@type": "Brand",
+              "name": "HERITAGE & HUE"
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": "https://heritageandhue.com/#showroom",
+              "priceCurrency": "USD",
+              "price": "145.00",
+              "priceValidUntil": "2027-12-31",
+              "itemCondition": "https://schema.org/NewCondition",
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.96",
+              "reviewCount": "342"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body
+    class="bg-parchment text-espresso font-sans antialiased selection:bg-terracotta selection:text-parchment overflow-x-hidden"
+  >
+    <!-- Toast Notification System -->
+    <div
+      id="toast-container"
+      class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 pointer-events-none"
+    ></div>
+
+    <!-- Announcement Bar -->
+    <div
+      class="bg-espresso text-parchment text-xs py-2.5 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-3 border-b border-brass/20"
+    >
+      <span
+        class="inline-block w-1.5 h-1.5 rounded-full bg-brass animate-pulse"
+      ></span>
+      <span class="font-serif italic text-sm text-brass-light"
+        >Autumn Edition Atelier Drop</span
+      >
+      <span class="hidden md:inline"
+        >• Complimentary Express Shipping & Hand-Stamped Wax Packaging on Orders
+        Over $175</span
+      >
+      <button
+        onclick="this.parentElement.style.display = 'none'"
+        class="ml-4 opacity-50 hover:opacity-100 text-xs"
+      >
+        ✕
+      </button>
+    </div>
+
+    <!-- Minimalist Floating Header -->
+    <header
+      class="sticky top-0 z-40 w-full glass-header border-b border-espresso/10 transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <!-- Mobile Menu Toggle -->
+        <button
+          onclick="toggleMobileNav()"
+          class="md:hidden text-parchment hover:text-brass transition-colors p-2"
+          aria-label="Toggle Menu"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Brand Logo -->
+        <a href="#" class="flex flex-col items-center group">
+          <span
+            class="font-serif text-2xl sm:text-3xl font-semibold tracking-wider text-parchment group-hover:text-brass-light transition-colors"
+            >HERITAGE
+            <span class="text-terracotta font-serif font-normal">&amp;</span>
+            HUE</span
+          >
+          <span
+            class="text-[9px] tracking-[0.3em] uppercase text-parchment/60 -mt-1 font-sans"
+            >Artisanal Atelier</span
+          >
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <nav
+          class="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase font-medium text-parchment/80"
+        >
+          <a
+            href="#vibe-matcher"
+            class="hover:text-brass-light transition-colors py-2"
+            >The Collection</a
+          >
+          <a
+            href="#artisanal-story"
+            class="hover:text-brass-light transition-colors py-2"
+            >Craftsmanship</a
+          >
+          <a
+            href="#contrast-slider"
+            class="hover:text-brass-light transition-colors py-2"
+            >The Process</a
+          >
+          <a
+            href="#showroom"
+            class="hover:text-brass-light transition-colors py-2"
+            >Curated Store</a
+          >
+          <a
+            href="#mystery-cards"
+            class="hover:text-brass-light transition-colors py-2 text-brass-light flex items-center gap-1"
+          >
+            <span>Atelier Gift</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+          </a>
+        </nav>
+
+        <!-- Quick Action Icons -->
+        <div class="flex items-center gap-5">
+          <button
+            onclick="toggleSearchModal(true)"
+            aria-label="Search"
+            class="text-parchment/80 hover:text-brass-light transition-colors p-1"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+
+          <button
+            onclick="toggleCartDrawer(true)"
+            aria-label="Shopping Bag"
+            class="relative text-parchment/80 hover:text-brass-light transition-colors p-1 flex items-center gap-2"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+              />
+            </svg>
+            <span
+              id="cart-counter"
+              class="bg-terracotta text-parchment text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center -ml-2 -mt-2"
+              >0</span
+            >
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu Dropdown -->
+      <div
+        id="mobile-nav"
+        class="hidden md:hidden bg-espresso border-b border-brass/20 px-6 py-6 space-y-4 text-xs tracking-widest uppercase text-parchment/80"
+      >
+        <a
+          href="#vibe-matcher"
+          onclick="toggleMobileNav()"
+          class="block py-2 border-b border-parchment/10"
+          >The Collection</a
+        >
+        <a
+          href="#artisanal-story"
+          onclick="toggleMobileNav()"
+          class="block py-2 border-b border-parchment/10"
+          >Craftsmanship</a
+        >
+        <a
+          href="#contrast-slider"
+          onclick="toggleMobileNav()"
+          class="block py-2 border-b border-parchment/10"
+          >The Process</a
+        >
+        <a
+          href="#showroom"
+          onclick="toggleMobileNav()"
+          class="block py-2 border-b border-parchment/10"
+          >Curated Store</a
+        >
+        <a
+          href="#mystery-cards"
+          onclick="toggleMobileNav()"
+          class="block py-2 text-brass-light"
+          >Atelier Gift Drop</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- DUAL-MODE HERO SECTION WITH AMBIENT VIDEO BACKGROUND -->
+      <section
+        class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-espresso text-parchment"
+      >
+        <!-- Background Video Loop with Warm Organic Overlay -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            class="w-full h-full object-cover scale-105 filter brightness-[0.45] contrast-[1.1] saturate-[0.85]"
+          >
+            <!-- High Quality Cinematic Artisanal Crafting Video -->
+            <source
+              src="https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-potter-shaping-clay-on-a-wheel-41554-large.mp4"
+              type="video/mp4"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1920&q=80"
+              alt="Pottery Background"
+              class="w-full h-full object-cover"
+            />
+          </video>
+          <!-- Warm Gradient Overlays for Text Contrast -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-espresso via-transparent to-espresso/60"
+          ></div>
+          <div class="absolute inset-0 bg-espresso/30 mix-blend-multiply"></div>
+        </div>
+
+        <div
+          class="relative z-10 max-w-5xl mx-auto px-6 py-20 text-center flex flex-col items-center"
+        >
+          <!-- Heritage Badge -->
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-parchment/10 border border-parchment/20 backdrop-blur-md mb-8 animate-float-gentle"
+          >
+            <span class="w-1.5 h-1.5 rounded-full bg-brass"></span>
+            <span
+              class="text-xs uppercase tracking-[0.25em] font-medium text-parchment/90"
+              >HANDMADE IN LIMITED QUANTITIES</span
+            >
+          </div>
+
+          <h1
+            class="font-serif text-5xl sm:text-7xl lg:text-8xl font-normal tracking-tight leading-[1.05] mb-6 text-parchment"
+          >
+            Crafted for
+            <em class="font-serif italic font-normal text-brass-light"
+              >Generations.</em
+            >
+            <br />
+            Defined by
+            <span class="text-terracotta italic font-serif">Intent.</span>
+          </h1>
+
+          <p
+            class="max-w-2xl text-base sm:text-lg text-parchment/80 font-light leading-relaxed mb-10"
+          >
+            Bespoke ceramics, vegetable-tanned leather goods, and heirloom
+            homewares created by independent master craftsmen. Built slowly with
+            organic raw materials.
+          </p>
+
+          <!-- Dual-Mode Interactive Toggle Controls -->
+          <div
+            class="inline-flex items-center w-[480px] max-w-full p-1.5 rounded-full bg-parchment/10 border border-parchment/20 backdrop-blur-md mb-12 box-border"
+          >
+            <button
+              onclick="switchHeroMode('vibe')"
+              id="tab-vibe"
+              class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs uppercase tracking-wider font-semibold transition-all duration-300 bg-terracotta text-parchment shadow-lg shrink-0 whitespace-nowrap"
+            >
+              <!-- Bootstrap Icon: bi-stars -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936c-.11.33-.576.33-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645c-.33-.11-.33-.576 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69a1.73 1.73 0 0 0-1.097-1.097l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
+                />
+              </svg>
+              <span>Vibe Collection Matcher</span>
+            </button>
+
+            <button
+              onclick="switchHeroMode('quiz')"
+              id="tab-quiz"
+              class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs uppercase tracking-wider font-semibold text-parchment/70 hover:text-parchment transition-all duration-300 shrink-0 whitespace-nowrap"
+            >
+              <!-- Bootstrap Icon: bi-hourglass-split -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.79 1.011 1.491v.7c0 .701-.478 1.235-1.011 1.491A3.5 3.5 0 0 0 4.5 14v1h7v-1a3.5 3.5 0 0 0-1.989-3.158C8.978 10.586 8.5 10.052 8.5 9.351v-.7c0-.701.478-1.235 1.011-1.491A3.5 3.5 0 0 0 11.5 3V2z"
+                />
+              </svg>
+              <span>3-Sec Gift Selector</span>
+            </button>
+          </div>
+
+          <!-- DYNAMIC HERO CONTENT AREA -->
+
+          <!-- HERO MODE 1: Heritage Vibe Matcher -->
+          <div
+            id="hero-vibe-mode"
+            class="w-full max-w-4xl transition-all duration-500"
+          >
+            <!-- Vibe Pills -->
+            <div
+              class="flex flex-wrap justify-center gap-3 mb-10"
+              id="vibe-matcher"
+            >
+              <button
+                onclick="filterVibe('all')"
+                class="vibe-btn active px-5 py-2 rounded-full text-xs uppercase tracking-wider font-semibold border border-brass bg-brass/20 text-brass-light transition-all"
+              >
+                All Collections
+              </button>
+              <button
+                onclick="filterVibe('morning')"
+                class="vibe-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-semibold border border-parchment/20 bg-parchment/5 text-parchment/80 hover:border-brass hover:text-brass-light transition-all"
+              >
+                Slow Morning Kitchen
+              </button>
+              <button
+                onclick="filterVibe('study')"
+                class="vibe-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-semibold border border-parchment/20 bg-parchment/5 text-parchment/80 hover:border-brass hover:text-brass-light transition-all"
+              >
+                The Timber Study
+              </button>
+              <button
+                onclick="filterVibe('living')"
+                class="vibe-btn px-5 py-2 rounded-full text-xs uppercase tracking-wider font-semibold border border-parchment/20 bg-parchment/5 text-parchment/80 hover:border-brass hover:text-brass-light transition-all"
+              >
+                Organic Living Space
+              </button>
+            </div>
+
+            <!-- Dynamic Vibe Showcase Grid -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left"
+              id="vibe-grid"
+            >
+              <!-- Item 1 -->
+              <div
+                class="vibe-card group bg-espresso-card/90 border border-parchment/10 rounded-2xl overflow-hidden p-4 transition-all duration-300 hover:-translate-y-2.5 hover:border-terracotta/40"
+                data-vibe="morning"
+              >
+                <div class="relative h-60 rounded-xl overflow-hidden mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=600&q=80"
+                    alt="Ceramic Teapot"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <span
+                    class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase bg-espresso/80 backdrop-blur-sm text-brass-light border border-brass/30"
+                    >HAND THROWN</span
+                  >
+                </div>
+                <div class="flex justify-between items-start mb-1">
+                  <h3
+                    class="font-serif text-xl font-medium text-parchment group-hover:text-brass-light transition-colors"
+                  >
+                    Kyoto Sand Teapot
+                  </h3>
+                  <span class="text-terracotta font-serif font-bold text-lg"
+                    >$168</span
+                  >
+                </div>
+                <p
+                  class="text-xs text-parchment/60 font-light mb-4 line-clamp-2"
+                >
+                  Coarse stoneware ceramic with iron glaze and bent rattan
+                  handle.
+                </p>
+                <button
+                  onclick="addToCart('Kyoto Sand Teapot', 168)"
+                  class="w-full py-2.5 rounded-xl bg-parchment/10 hover:bg-terracotta text-parchment font-medium text-xs tracking-wider uppercase transition-colors"
+                >
+                  Acquire Item +
+                </button>
+              </div>
+
+              <!-- Item 2 -->
+              <div
+                class="vibe-card group bg-espresso-card/90 border border-parchment/10 rounded-2xl overflow-hidden p-4 transition-all duration-300 hover:-translate-y-2.5 hover:border-terracotta/40"
+                data-vibe="study"
+              >
+                <div class="relative h-60 rounded-xl overflow-hidden mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=600&q=80"
+                    alt="Leather Journal"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <span
+                    class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase bg-espresso/80 backdrop-blur-sm text-brass-light border border-brass/30"
+                    >HEIRLOOM LEATHER</span
+                  >
+                </div>
+                <div class="flex justify-between items-start mb-1">
+                  <h3
+                    class="font-serif text-xl font-medium text-parchment group-hover:text-brass-light transition-colors"
+                  >
+                    Artisan Ledger Notebook
+                  </h3>
+                  <span class="text-terracotta font-serif font-bold text-lg"
+                    >$110</span
+                  >
+                </div>
+                <p
+                  class="text-xs text-parchment/60 font-light mb-4 line-clamp-2"
+                >
+                  Tuscan vegetable-tanned leather binder with cotton paper.
+                </p>
+                <button
+                  onclick="addToCart('Artisan Ledger Notebook', 110)"
+                  class="w-full py-2.5 rounded-xl bg-parchment/10 hover:bg-terracotta text-parchment font-medium text-xs tracking-wider uppercase transition-colors"
+                >
+                  Acquire Item +
+                </button>
+              </div>
+
+              <!-- Item 3 -->
+              <div
+                class="vibe-card group bg-espresso-card/90 border border-parchment/10 rounded-2xl overflow-hidden p-4 transition-all duration-300 hover:-translate-y-2.5 hover:border-terracotta/40"
+                data-vibe="living"
+              >
+                <div class="relative h-60 rounded-xl overflow-hidden mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=600&q=80"
+                    alt="Apothecary Candle"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <span
+                    class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase bg-espresso/80 backdrop-blur-sm text-brass-light border border-brass/30"
+                    >ORGANIC SOY</span
+                  >
+                </div>
+                <div class="flex justify-between items-start mb-1">
+                  <h3
+                    class="font-serif text-xl font-medium text-parchment group-hover:text-brass-light transition-colors"
+                  >
+                    Cedar & Smoke Vessel
+                  </h3>
+                  <span class="text-terracotta font-serif font-bold text-lg"
+                    >$72</span
+                  >
+                </div>
+                <p
+                  class="text-xs text-parchment/60 font-light mb-4 line-clamp-2"
+                >
+                  Hand-poured botanical soy wax in a reusable hand-cast
+                  terracotta jar.
+                </p>
+                <button
+                  onclick="addToCart('Cedar & Smoke Vessel', 72)"
+                  class="w-full py-2.5 rounded-xl bg-parchment/10 hover:bg-terracotta text-parchment font-medium text-xs tracking-wider uppercase transition-colors"
+                >
+                  Acquire Item +
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- HERO MODE 2: 3-Second Interactive Gift Selector -->
+          <div
+            id="hero-quiz-mode"
+            class="hidden w-full max-w-xl mx-auto bg-espresso-card/95 border border-brass/30 p-8 rounded-3xl backdrop-blur-xl text-center"
+          >
+            <div id="quiz-step-1">
+              <span
+                class="text-xs font-bold tracking-[0.2em] text-brass uppercase block mb-2"
+                >Step 01 / 02</span
+              >
+              <h2 class="font-serif text-2xl font-normal mb-6 text-parchment">
+                Who are you curating for today?
+              </h2>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <!-- Option 1: The Culinary Enthusiast -->
+                <button
+                  onclick="selectQuizStep(1, 'The Epicurean')"
+                  class="p-4 rounded-xl bg-parchment/5 hover:bg-terracotta/30 border border-parchment/10 hover:border-terracotta transition-all text-center flex flex-col items-center justify-center group"
+                >
+                  <span
+                    class="w-8 h-8 mb-2 flex items-center justify-center text-brass-light group-hover:scale-110 transition-transform"
+                  >
+                    <!-- Bootstrap Icon: bi-cup-hot -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2 8a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm1 0v5h8V8z"
+                      />
+                      <path
+                        d="M0 8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm13 1.5a1.5 1.5 0 0 1 1.5-.5h.5a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-.5a1.5 1.5 0 0 1-1.5-1.5zM4.5 1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5zm3 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5zm3 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-xs font-semibold text-parchment"
+                    >The Culinary Enthusiast</span
+                  >
+                </button>
+
+                <!-- Option 2: The Thoughtful Writer -->
+                <button
+                  onclick="selectQuizStep(1, 'The Scholar')"
+                  class="p-4 rounded-xl bg-parchment/5 hover:bg-terracotta/30 border border-parchment/10 hover:border-terracotta transition-all text-center flex flex-col items-center justify-center group"
+                >
+                  <span
+                    class="w-8 h-8 mb-2 flex items-center justify-center text-brass-light group-hover:scale-110 transition-transform"
+                  >
+                    <!-- Bootstrap Icon: bi-pen -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="m13.498.795.149-.149a1.207 1.207 0 0 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a1.5 1.5 0 0 1 2.059-.059M11.854 2.146l-9 9 1.414 1.414 9-9z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-xs font-semibold text-parchment"
+                    >The Thoughtful Writer</span
+                  >
+                </button>
+
+                <!-- Option 3: The Home Sanctuary -->
+                <button
+                  onclick="selectQuizStep(1, 'The Aesthetician')"
+                  class="p-4 rounded-xl bg-parchment/5 hover:bg-terracotta/30 border border-parchment/10 hover:border-terracotta transition-all text-center flex flex-col items-center justify-center group"
+                >
+                  <span
+                    class="w-8 h-8 mb-2 flex items-center justify-center text-brass-light group-hover:scale-110 transition-transform"
+                  >
+                    <!-- Bootstrap Icon: bi-house-heart -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-6 h-6"
+                      fill="currentColor"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982"
+                      />
+                      <path
+                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L8.707 1.5zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="text-xs font-semibold text-parchment"
+                    >The Home Sanctuary</span
+                  >
+                </button>
+              </div>
+            </div>
+
+            <div id="quiz-step-2" class="hidden">
+              <span
+                class="text-xs font-bold tracking-[0.2em] text-brass uppercase block mb-2"
+                >Step 02 / 02</span
+              >
+              <h2 class="font-serif text-2xl font-normal mb-6 text-parchment">
+                Choose your investment tier
+              </h2>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <button
+                  onclick="calculateQuizResult('Under $100')"
+                  class="p-4 rounded-xl bg-parchment/5 hover:bg-brass/20 border border-parchment/10 hover:border-brass transition-all text-center"
+                >
+                  <span
+                    class="font-serif font-bold text-lg text-brass-light block"
+                    >$50 - $100</span
+                  >
+                  <span class="text-[10px] text-parchment/60"
+                    >Thoughtful Gesture</span
+                  >
+                </button>
+                <button
+                  onclick="calculateQuizResult('$100 - $250')"
+                  class="p-4 rounded-xl bg-parchment/5 hover:bg-brass/20 border border-parchment/10 hover:border-brass transition-all text-center"
+                >
+                  <span
+                    class="font-serif font-bold text-lg text-brass-light block"
+                    >$100 - $250</span
+                  >
+                  <span class="text-[10px] text-parchment/60"
+                    >Artisanal Centerpiece</span
+                  >
+                </button>
+                <button
+                  onclick="calculateQuizResult('$250+')"
+                  class="p-4 rounded-xl bg-parchment/5 hover:bg-brass/20 border border-parchment/10 hover:border-brass transition-all text-center"
+                >
+                  <span
+                    class="font-serif font-bold text-lg text-brass-light block"
+                    >$250+</span
+                  >
+                  <span class="text-[10px] text-parchment/60"
+                    >Heirloom Piece</span
+                  >
+                </button>
+              </div>
+            </div>
+
+            <div id="quiz-result" class="hidden text-center">
+              <span
+                class="inline-block px-3 py-1 rounded-full bg-terracotta/20 text-terracotta text-xs font-bold uppercase tracking-widest mb-3"
+                >YOUR CURATED MATCH</span
+              >
+              <h3
+                id="quiz-match-title"
+                class="font-serif text-3xl font-medium text-parchment mb-2"
+              >
+                The Terra Mortar &amp; Pestle Set
+              </h3>
+              <p class="text-xs text-parchment/70 mb-6 font-light">
+                Hand-carved basalt rock and solid teakwood pestle for natural
+                ingredient preparation.
+              </p>
+              <div class="flex items-center justify-center gap-4">
+                <button
+                  onclick="addToCart('The Terra Mortar & Pestle Set', 145)"
+                  class="px-6 py-3 rounded-xl bg-terracotta text-parchment font-semibold text-xs tracking-wider uppercase hover:scale-105 transition-all shadow-lg"
+                >
+                  Acquire ($145)
+                </button>
+                <button
+                  onclick="resetQuiz()"
+                  class="px-4 py-3 rounded-xl bg-parchment/10 text-xs text-parchment/80 font-medium hover:bg-parchment/20"
+                >
+                  Re-Curate 🔄
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIVE SOCIAL PROOF TICKER -->
+      <section
+        class="border-y border-espresso/10 bg-parchment-muted/60 py-4 overflow-hidden relative"
+      >
+        <div
+          class="flex whitespace-nowrap animate-marquee items-center gap-12 text-xs uppercase tracking-widest font-medium text-espresso/70"
+        >
+          <span class="flex items-center gap-2"
+            ><span class="w-2 h-2 rounded-full bg-terracotta"></span> Verified
+            Patron @marian_c: "The weight and glaze of the ceramic teapot is
+            breathtaking." ★★★★★</span
+          >
+          <span class="flex items-center gap-2"
+            ><span class="w-2 h-2 rounded-full bg-moss"></span> Atelier Order
+            Dispatched to Paris, France (12 mins ago)</span
+          >
+          <span class="flex items-center gap-2"
+            ><span class="w-2 h-2 rounded-full bg-brass"></span> Architectural
+            Digest: "Top 10 Heirloom Brands of 2026"</span
+          >
+          <span class="flex items-center gap-2"
+            ><span class="w-2 h-2 rounded-full bg-terracotta"></span> Verified
+            Patron @david_k: "Leather patina after 6 months is stunning."
+            ★★★★★</span
+          >
+          <span class="flex items-center gap-2"
+            ><span class="w-2 h-2 rounded-full bg-moss"></span> Sustainable
+            Craft Commitment: 100% Carbon Neutral Craftsmanship</span
+          >
+        </div>
+      </section>
+
+      <!-- ARTISANAL STORY & HERITAGE NARRATIVE SECTION -->
+      <section id="artisanal-story" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="relative">
+            <div class="aspect-[4/5] rounded-3xl overflow-hidden card-shadow">
+              <img
+                src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1000&q=80"
+                alt="Master Craftsman Working"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <!-- Overlay Badge -->
+            <div
+              class="absolute -bottom-8 -right-4 sm:bottom-8 sm:-right-8 bg-espresso text-parchment p-6 rounded-2xl border border-brass/30 max-w-xs card-shadow"
+            >
+              <span
+                class="font-serif italic text-3xl text-brass-light block mb-1"
+                >48 Hours</span
+              >
+              <p class="text-xs text-parchment/70 font-light leading-relaxed">
+                Average time dedicated by a single master artisan to complete
+                one item in our collection.
+              </p>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <span
+              class="text-xs font-bold tracking-[0.25em] text-terracotta uppercase"
+              >OUR SLOW PHILOSOPHY</span
+            >
+            <h2
+              class="font-serif text-4xl sm:text-5xl font-normal leading-tight text-espresso"
+            >
+              In an era of disposable mass production, we choose
+              <em class="font-serif italic text-terracotta">permanence.</em>
+            </h2>
+            <p class="text-espresso/70 leading-relaxed font-light text-base">
+              Every piece at Heritage &amp; Hue begins in rural workshops across
+              Kyoto, Tuscany, and the Scottish Highlands. We partner directly
+              with family ateliers who have refined their heritage trades across
+              generations.
+            </p>
+            <div
+              class="grid grid-cols-2 gap-6 pt-4 border-t border-espresso/10"
+            >
+              <div>
+                <h3
+                  class="font-serif text-2xl font-semibold text-espresso mb-1"
+                >
+                  100% Organic
+                </h3>
+                <p class="text-xs text-espresso/60 font-light">
+                  Ethically sourced clays, vegetable tannins, and non-toxic
+                  natural waxes.
+                </p>
+              </div>
+              <div>
+                <h3
+                  class="font-serif text-2xl font-semibold text-espresso mb-1"
+                >
+                  Zero Plastic
+                </h3>
+                <p class="text-xs text-espresso/60 font-light">
+                  Packaged in recycled cotton linen wraps with hand-stamped wax
+                  seals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE "CRAFTED VS COMMON" SLIDER (CONTRAST VIEW) -->
+      <section
+        id="contrast-slider"
+        class="py-24 bg-espresso text-parchment relative overflow-hidden"
+      >
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center max-w-2xl mx-auto mb-16">
+            <span
+              class="text-xs font-bold tracking-[0.25em] text-brass uppercase block mb-2"
+              >THE TACTILE DIFFERENCE</span
+            >
+            <h2
+              class="font-serif text-4xl sm:text-5xl font-normal text-parchment mb-4"
+            >
+              Mass Produced vs. Handcrafted
+            </h2>
+            <p class="text-xs sm:text-sm text-parchment/60 font-light">
+              Drag the interactive horizontal slider below to explore the subtle
+              distinction of genuine materials.
+            </p>
+          </div>
+
+          <!-- Custom Drag/Hover Slider Container -->
+          <div
+            class="relative max-w-4xl mx-auto h-[450px] rounded-3xl overflow-hidden border border-brass/20 select-none shadow-2xl"
+            id="slider-container"
+            onmousemove="handleSliderMove(event)"
+            ontouchmove="handleSliderTouch(event)"
+          >
+            <!-- Left Side: Mass Produced Plastic -->
+            <div
+              class="absolute inset-0 bg-stone-900 p-8 sm:p-12 flex flex-col justify-between"
+            >
+              <div>
+                <span
+                  class="px-3 py-1 rounded-full bg-red-900/40 text-red-300 text-[10px] font-bold tracking-widest uppercase border border-red-500/20"
+                  >MASS-PRODUCED ALTERNATIVE</span
+                >
+                <h3 class="font-serif text-3xl font-medium mt-6 text-stone-300">
+                  Synthetic &amp; Fleeting
+                </h3>
+                <ul class="mt-6 space-y-3 text-xs text-stone-400 font-light">
+                  <li class="flex items-center gap-2">
+                    <span class="text-red-400">✕</span> Chemical glazes and
+                    synthetic polymer coats
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="text-red-400">✕</span> Degrades and turns to
+                    waste in under 12 months
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="text-red-400">✕</span> Factory stamped without
+                    soul or character
+                  </li>
+                </ul>
+              </div>
+              <p class="text-xs text-stone-500 font-mono">
+                INDUSTRY STANDARD MANUFACTURING
+              </p>
+            </div>
+
+            <!-- Right Side: Handcrafted Perfection (Clips over the top) -->
+            <div
+              id="slider-overlay"
+              class="absolute inset-0 bg-gradient-to-br from-espresso-card via-espresso to-moss/40 p-8 sm:p-12 flex flex-col justify-between slider-clip border-r-2 border-brass"
+            >
+              <div>
+                <span
+                  class="px-3 py-1 rounded-full bg-terracotta/20 text-terracotta text-[10px] font-bold tracking-widest uppercase border border-terracotta/40"
+                  >HERITAGE &amp; HUE ARTISANAL</span
+                >
+                <h3 class="font-serif text-3xl font-medium mt-6 text-parchment">
+                  Living Materials &amp; Timeless
+                </h3>
+                <ul class="mt-6 space-y-3 text-xs text-parchment/80 font-light">
+                  <li class="flex items-center gap-2">
+                    <span class="text-brass-light">✓</span> Natural stoneware,
+                    organic vegetable tans &amp; pure brass
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="text-brass-light">✓</span> Develops a rich,
+                    unique patina over decades of use
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="text-brass-light">✓</span> Individually signed
+                    by the master artisan
+                  </li>
+                </ul>
+              </div>
+              <p class="text-xs text-brass-light font-serif italic">
+                HANDCRAFTED IN KYOTO &amp; TUSCANY
+              </p>
+            </div>
+
+            <!-- Slider Drag Handle -->
+            <div
+              id="slider-handle"
+              class="absolute top-0 bottom-0 w-1 bg-brass left-1/2 -ml-0.5 cursor-ew-resize z-20 flex items-center justify-center"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-brass text-espresso font-bold flex items-center justify-center shadow-xl text-xs border-2 border-parchment"
+              >
+                ↔
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TACTILE 3D CARD FLIP: MYSTERY ATELIER DRAW -->
+      <section
+        id="mystery-cards"
+        class="py-24 max-w-7xl mx-auto px-6 text-center"
+      >
+        <span
+          class="text-xs font-bold tracking-[0.25em] text-terracotta uppercase block mb-2"
+          >ATELIER PRIVILEGE</span
+        >
+        <h2
+          class="font-serif text-4xl sm:text-5xl font-normal text-espresso mb-4"
+        >
+          Draw A Patron Key Card
+        </h2>
+        <p
+          class="text-xs sm:text-sm text-espresso/60 font-light mb-16 max-w-md mx-auto"
+        >
+          Select an artisanal wooden keycard below to reveal exclusive member
+          privileges and complimentary gifts.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <!-- Card 1 -->
+          <div
+            class="perspective-1000 h-80 cursor-pointer group"
+            onclick="flipCard(this)"
+          >
+            <div
+              class="card-inner relative w-full h-full transform-style-3d rounded-3xl bg-espresso text-parchment p-8 flex flex-col items-center justify-center border border-brass/30 card-shadow"
+            >
+              <!-- Front -->
+              <div
+                class="absolute inset-0 backface-hidden flex flex-col items-center justify-center p-8 rounded-3xl bg-espresso border border-brass/20"
+              >
+                <div
+                  class="w-16 h-16 rounded-2xl bg-parchment/10 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <!-- Rolled Scroll / Parchment -->
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 11.25h6M9 15h4"
+                    />
+                  </svg>
+                </div>
+                <h3 class="font-serif text-xl font-medium text-brass-light">
+                  I. THE SCHOLAR
+                </h3>
+                <p
+                  class="text-[11px] text-parchment/40 mt-2 tracking-widest uppercase"
+                >
+                  Tap To Reveal
+                </p>
+              </div>
+              <!-- Back -->
+              <div
+                class="absolute inset-0 backface-hidden rotate-y-180 flex flex-col items-center justify-center p-8 rounded-3xl bg-terracotta text-parchment border border-parchment/30"
+              >
+                <span class="font-serif text-3xl font-bold mb-1"
+                  >15% SAVINGS</span
+                >
+                <p class="text-xs font-light text-parchment/90 mb-4">
+                  Apply code on your first acquire.
+                </p>
+                <span
+                  class="px-4 py-1.5 bg-espresso text-brass-light font-mono text-xs rounded-lg mb-4"
+                  >HERITAGE15</span
+                >
+                <button
+                  onclick="
+                    event.stopPropagation();
+                    applyCode('HERITAGE15');
+                  "
+                  class="px-4 py-2 bg-parchment text-espresso text-xs font-bold tracking-wider uppercase rounded-xl hover:scale-105 transition-transform"
+                >
+                  Apply Code
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="perspective-1000 h-80 cursor-pointer group"
+            onclick="flipCard(this)"
+          >
+            <div
+              class="card-inner relative w-full h-full transform-style-3d rounded-3xl bg-espresso text-parchment p-8 flex flex-col items-center justify-center border border-brass/30 card-shadow"
+            >
+              <!-- Front -->
+              <div
+                class="absolute inset-0 backface-hidden flex flex-col items-center justify-center p-8 rounded-3xl bg-espresso border border-brass/20"
+              >
+                <div
+                  class="w-16 h-16 rounded-2xl bg-parchment/10 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <!-- Flame -->
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 2c.8 2.2 2 3.8 2 5.5A2 2 0 0 1 12 9.5 2 2 0 0 1 10 7.5C10 5.8 11.2 4.2 12 2z"
+                      fill="currentColor"
+                      fill-opacity="0.2"
+                    />
+                    <!-- Wick & Candle Body -->
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9.5v2.5M7 12h10v9a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-9z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="font-serif text-xl font-medium text-brass-light">
+                  II. THE ATELIER GIFT
+                </h3>
+                <p
+                  class="text-[11px] text-parchment/40 mt-2 tracking-widest uppercase"
+                >
+                  Tap To Reveal
+                </p>
+              </div>
+              <!-- Back -->
+              <div
+                class="absolute inset-0 backface-hidden rotate-y-180 flex flex-col items-center justify-center p-8 rounded-3xl bg-moss text-parchment border border-parchment/30"
+              >
+                <span class="font-serif text-2xl font-bold mb-1"
+                  >COMPLIMENTARY GIFT</span
+                >
+                <p class="text-xs font-light text-parchment/90 mb-4">
+                  Free Organic Cedar Wax Candle with order.
+                </p>
+                <button
+                  onclick="
+                    event.stopPropagation();
+                    applyCode('CEDARGIFT');
+                  "
+                  class="px-4 py-2 bg-parchment text-espresso text-xs font-bold tracking-wider uppercase rounded-xl hover:scale-105 transition-transform"
+                >
+                  Claim Gift
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="perspective-1000 h-80 cursor-pointer group"
+            onclick="flipCard(this)"
+          >
+            <div
+              class="card-inner relative w-full h-full transform-style-3d rounded-3xl bg-espresso text-parchment p-8 flex flex-col items-center justify-center border border-brass/30 card-shadow"
+            >
+              <!-- Front -->
+              <div
+                class="absolute inset-0 backface-hidden flex flex-col items-center justify-center p-8 rounded-3xl bg-espresso border border-brass/20"
+              >
+                <div
+                  class="w-16 h-16 rounded-2xl bg-parchment/10 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 h-8"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 12L3 21l9-3 9 3-3-9M6 12l6-9 6 9M6 12h12"
+                    />
+                  </svg>
+                </div>
+                <h3 class="font-serif text-xl font-medium text-brass-light">
+                  III. VIP FREIGHT
+                </h3>
+                <p
+                  class="text-[11px] text-parchment/40 mt-2 tracking-widest uppercase"
+                >
+                  Tap To Reveal
+                </p>
+              </div>
+              <!-- Back -->
+              <div
+                class="absolute inset-0 backface-hidden rotate-y-180 flex flex-col items-center justify-center p-8 rounded-3xl bg-brass text-espresso border border-parchment/30"
+              >
+                <span class="font-serif text-2xl font-bold mb-1"
+                  >EXPRESS GLOBAL</span
+                >
+                <p class="text-xs font-light text-espresso/80 mb-4">
+                  Free Priority Shipping on any order value.
+                </p>
+                <button
+                  onclick="
+                    event.stopPropagation();
+                    applyCode('FREESHIP');
+                  "
+                  class="px-4 py-2 bg-espresso text-brass-light text-xs font-bold tracking-wider uppercase rounded-xl hover:scale-105 transition-transform"
+                >
+                  Apply Freight
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FULL ARTISANAL CATALOG SHOWROOM -->
+      <section
+        id="showroom"
+        class="py-24 bg-parchment-muted/50 border-t border-espresso/10"
+      >
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6"
+          >
+            <div>
+              <span
+                class="text-xs font-bold tracking-[0.25em] text-terracotta uppercase block mb-1"
+                >CURATED CATALOGUE</span
+              >
+              <h2
+                class="font-serif text-4xl sm:text-5xl font-normal text-espresso"
+              >
+                Artisanal Showroom
+              </h2>
+            </div>
+            <p class="text-xs text-espresso/60 max-w-xs font-light">
+              Every object is stamped with the artisan’s mark and accompanied by
+              a signed certificate of origin.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Product 1 -->
+            <div
+              class="group bg-parchment rounded-3xl p-5 border border-espresso/10 card-shadow card-shadow-hover transition-all duration-500"
+            >
+              <div
+                class="relative h-72 rounded-2xl overflow-hidden mb-5 bg-stone-200"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80"
+                  alt="Kyoto Teapot"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <span
+                  class="absolute top-3 right-3 text-[10px] font-bold px-3 py-1 rounded-full bg-espresso/80 text-brass-light backdrop-blur-sm"
+                  >★ 4.9 (84)</span
+                >
+              </div>
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-serif text-2xl font-medium text-espresso">
+                  Kyoto Sand Teapot
+                </h3>
+                <span class="font-serif font-bold text-xl text-terracotta"
+                  >$168</span
+                >
+              </div>
+              <p class="text-xs text-espresso/60 font-light mb-6">
+                Hand-thrown coarse stoneware ceramic with rattan wrapped spout.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  onclick="addToCart('Kyoto Sand Teapot', 168)"
+                  class="flex-1 py-3 rounded-xl bg-espresso text-parchment font-semibold text-xs tracking-wider uppercase hover:bg-terracotta transition-colors"
+                >
+                  Add To Bag
+                </button>
+                <button
+                  onclick="
+                    quickView(
+                      'Kyoto Sand Teapot',
+                      168,
+                      'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80',
+                    )
+                  "
+                  class="p-3 rounded-xl border border-espresso/20 text-espresso hover:border-espresso transition-colors"
+                  aria-label="Quick View"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div
+              class="group bg-parchment rounded-3xl p-5 border border-espresso/10 card-shadow card-shadow-hover transition-all duration-500"
+            >
+              <div
+                class="relative h-72 rounded-2xl overflow-hidden mb-5 bg-stone-200"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
+                  alt="Leather Journal"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <span
+                  class="absolute top-3 right-3 text-[10px] font-bold px-3 py-1 rounded-full bg-espresso/80 text-brass-light backdrop-blur-sm"
+                  >★ 5.0 (120)</span
+                >
+              </div>
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-serif text-2xl font-medium text-espresso">
+                  Tuscan Ledger Notebook
+                </h3>
+                <span class="font-serif font-bold text-xl text-terracotta"
+                  >$110</span
+                >
+              </div>
+              <p class="text-xs text-espresso/60 font-light mb-6">
+                Vegetable-tanned full grain leather with refillable cotton
+                deckle paper.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  onclick="addToCart('Tuscan Ledger Notebook', 110)"
+                  class="flex-1 py-3 rounded-xl bg-espresso text-parchment font-semibold text-xs tracking-wider uppercase hover:bg-terracotta transition-colors"
+                >
+                  Add To Bag
+                </button>
+                <button
+                  onclick="
+                    quickView(
+                      'Tuscan Ledger Notebook',
+                      110,
+                      'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80',
+                    )
+                  "
+                  class="p-3 rounded-xl border border-espresso/20 text-espresso hover:border-espresso transition-colors"
+                  aria-label="Quick View"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div
+              class="group bg-parchment rounded-3xl p-5 border border-espresso/10 card-shadow card-shadow-hover transition-all duration-500"
+            >
+              <div
+                class="relative h-72 rounded-2xl overflow-hidden mb-5 bg-stone-200"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80"
+                  alt="Mortar and Pestle"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <span
+                  class="absolute top-3 right-3 text-[10px] font-bold px-3 py-1 rounded-full bg-espresso/80 text-brass-light backdrop-blur-sm"
+                  >★ 4.9 (342)</span
+                >
+              </div>
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="font-serif text-2xl font-medium text-espresso">
+                  Terra Mortar &amp; Pestle
+                </h3>
+                <span class="font-serif font-bold text-xl text-terracotta"
+                  >$145</span
+                >
+              </div>
+              <p class="text-xs text-espresso/60 font-light mb-6">
+                Basalt rock vessel hand-chiselled with solid teakwoodpestle.
+              </p>
+              <div class="flex items-center gap-3">
+                <button
+                  onclick="addToCart('Terra Mortar & Pestle', 145)"
+                  class="flex-1 py-3 rounded-xl bg-espresso text-parchment font-semibold text-xs tracking-wider uppercase hover:bg-terracotta transition-colors"
+                >
+                  Add To Bag
+                </button>
+                <button
+                  onclick="
+                    quickView(
+                      'Terra Mortar & Pestle',
+                      145,
+                      'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=800&q=80',
+                    )
+                  "
+                  class="p-3 rounded-xl border border-espresso/20 text-espresso hover:border-espresso transition-colors"
+                  aria-label="Quick View"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-espresso text-parchment border-t border-brass/20 pt-20 pb-12"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div>
+            <span
+              class="font-serif text-2xl font-normal text-parchment block mb-4"
+              >HERITAGE
+              <span class="text-terracotta font-serif">&amp;</span> HUE</span
+            >
+            <p
+              class="text-xs text-parchment/60 font-light leading-relaxed mb-6"
+            >
+              An independent atelier committed to slow craftsmanship,
+              sustainable raw materials, and timeless design.
+            </p>
+            <span
+              class="text-[10px] text-brass-light uppercase tracking-widest block"
+              >Kyoto • Florence • Edinburgh</span
+            >
+          </div>
+          <div>
+            <h4
+              class="text-xs font-bold text-brass uppercase tracking-widest mb-4"
+            >
+              Navigation
+            </h4>
+            <ul class="space-y-2.5 text-xs text-parchment/70 font-light">
+              <li>
+                <a
+                  href="#vibe-matcher"
+                  class="hover:text-brass-light transition-colors"
+                  >The Collections</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#artisanal-story"
+                  class="hover:text-brass-light transition-colors"
+                  >Our Craftsmen</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contrast-slider"
+                  class="hover:text-brass-light transition-colors"
+                  >The Process</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#showroom"
+                  class="hover:text-brass-light transition-colors"
+                  >Full Showroom</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-xs font-bold text-brass uppercase tracking-widest mb-4"
+            >
+              Patron Services
+            </h4>
+            <ul class="space-y-2.5 text-xs text-parchment/70 font-light">
+              <li>
+                <a href="#" class="hover:text-brass-light transition-colors"
+                  >Bespoke Monogramming</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brass-light transition-colors"
+                  >Worldwide Freight &amp; Customs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brass-light transition-colors"
+                  >Lifetime Guarantee</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brass-light transition-colors"
+                  >Care &amp; Restoration</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-xs font-bold text-brass uppercase tracking-widest mb-4"
+            >
+              The Atelier Gazette
+            </h4>
+            <p class="text-xs text-parchment/60 font-light mb-4">
+              Subscribe for quiet updates and early drop notifications.
+            </p>
+            <form onsubmit="subscribeGazette(event)" class="space-y-2">
+              <input
+                type="email"
+                required
+                placeholder="Enter your email address"
+                class="w-full px-4 py-2.5 rounded-xl bg-parchment/5 border border-parchment/15 text-xs text-parchment placeholder-parchment/30 focus:outline-none focus:border-brass"
+              />
+              <button
+                type="submit"
+                class="w-full py-2.5 rounded-xl bg-terracotta text-parchment font-semibold text-xs uppercase tracking-wider hover:bg-terracotta-hover transition-colors"
+              >
+                Join Gazette
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-parchment/10 pt-8 flex flex-col sm:flex-row justify-between items-center text-[11px] text-parchment/40 gap-4"
+        >
+          <p>
+            © 2026 HERITAGE &amp; HUE ATELIER LLC. Crafted with care and intent.
+          </p>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-parchment">Ethical Charter</a>
+            <a href="#" class="hover:text-parchment">Privacy Terms</a>
+            <a href="#" class="hover:text-parchment">Sustainability Report</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SLIDE-OUT CART DRAWER -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 pointer-events-none hidden">
+      <div
+        id="cart-backdrop"
+        onclick="toggleCartDrawer(false)"
+        class="absolute inset-0 bg-espresso/80 backdrop-blur-sm opacity-0 transition-opacity duration-300"
+      ></div>
+      <div
+        id="cart-panel"
+        class="absolute top-0 right-0 bottom-0 w-full max-w-md bg-espresso text-parchment border-l border-brass/20 p-8 flex flex-col justify-between transform translate-x-full transition-transform duration-300 pointer-events-auto"
+      >
+        <div>
+          <div
+            class="flex justify-between items-center pb-6 border-b border-parchment/10"
+          >
+            <h3
+              class="font-serif text-2xl font-medium text-parchment flex items-center gap-2"
+            >
+              <span>Your Selection Bag</span>
+              <span
+                id="drawer-cart-count"
+                class="text-xs font-sans px-2.5 py-0.5 rounded-full bg-terracotta/20 text-terracotta font-bold"
+                >0</span
+              >
+            </h3>
+            <button
+              onclick="toggleCartDrawer(false)"
+              class="text-parchment/60 hover:text-parchment text-xl"
+            >
+              ✕
+            </button>
+          </div>
+          <div
+            id="cart-items"
+            class="py-6 space-y-4 max-h-[60vh] overflow-y-auto"
+          >
+            <p
+              id="empty-cart-msg"
+              class="text-xs text-parchment/40 text-center py-12 font-light"
+            >
+              Your selection bag is currently empty.
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t border-parchment/10 pt-6">
+          <div class="flex justify-between items-center mb-6">
+            <span
+              class="text-xs text-parchment/60 uppercase tracking-wider font-medium"
+              >Subtotal</span
+            >
+            <span
+              id="cart-subtotal"
+              class="font-serif font-bold text-2xl text-brass-light"
+              >$0.00</span
+            >
+          </div>
+          <button
+            onclick="checkout()"
+            class="w-full py-4 rounded-xl bg-terracotta text-parchment font-semibold text-xs tracking-wider uppercase hover:bg-terracotta-hover transition-all shadow-lg"
+          >
+            Proceed To Atelier Checkout 🔒
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUICK VIEW MODAL -->
+    <div
+      id="quickview-modal"
+      class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden"
+    >
+      <div
+        onclick="closeQuickView()"
+        class="absolute inset-0 bg-espresso/80 backdrop-blur-md"
+      ></div>
+      <div
+        class="relative bg-parchment text-espresso border border-espresso/10 rounded-3xl p-8 max-w-xl w-full z-10 card-shadow"
+      >
+        <button
+          onclick="closeQuickView()"
+          class="absolute top-4 right-4 text-espresso/60 hover:text-espresso text-xl"
+        >
+          ✕
+        </button>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+
+    <!-- SEARCH OVERLAY MODAL -->
+    <div
+      id="search-modal"
+      class="fixed inset-0 z-50 flex items-start justify-center pt-24 p-4 hidden"
+    >
+      <div
+        onclick="toggleSearchModal(false)"
+        class="absolute inset-0 bg-espresso/90 backdrop-blur-md"
+      ></div>
+      <div
+        class="relative w-full max-w-2xl bg-espresso border border-brass/30 rounded-2xl p-6 z-10 shadow-2xl"
+      >
+        <div class="flex items-center gap-3 border-b border-parchment/10 pb-4">
+          <svg
+            class="w-5 h-5 text-brass"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+          <input
+            type="text"
+            onkeyup="handleSearch(this.value)"
+            placeholder="Search ceramics, leather, candles..."
+            class="w-full bg-transparent text-parchment text-sm placeholder-parchment/40 focus:outline-none"
+          />
+        </div>
+        <div
+          id="search-results"
+          class="py-4 space-y-2 max-h-60 overflow-y-auto"
+        >
+          <p class="text-xs text-parchment/40 text-center py-4">
+            Search our master artisan index...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERACTION LOGIC & STATE ENGINE -->
+    <script src="script.js"></script>
+  </body>
+</html>
