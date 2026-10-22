@@ -1,55 +1,55 @@
 /* Custom UI Styling */
-      .glass-header {
-        background: rgba(26, 23, 21, 0.85);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-      }
+.glass-header {
+  background: rgba(26, 23, 21, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
 
-      .card-shadow {
-        box-shadow: 0 10px 30px -10px rgba(26, 23, 21, 0.08);
-      }
+.card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(26, 23, 21, 0.08);
+}
 
-      .card-shadow-hover:hover {
-        box-shadow: 0 20px 40px -15px rgba(200, 90, 50, 0.15);
-      }
+.card-shadow-hover:hover {
+  box-shadow: 0 20px 40px -15px rgba(200, 90, 50, 0.15);
+}
 
-      /* 3D Perspective Card Flip */
-      .perspective-1000 {
-        perspective: 1000px;
-      }
-      .transform-style-3d {
-        transform-style: preserve-3d;
-        transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .backface-hidden {
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-      }
-      .rotate-y-180 {
-        transform: rotateY(180deg);
-      }
+/* 3D Perspective Card Flip */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
 
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 7px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #f9f6f0;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #c85a32;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #2b3a2c;
-      }
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f9f6f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #c85a32;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2b3a2c;
+}
 
-      /* Smooth Slider Clip Path */
-      .slider-clip {
-        clip-path: polygon(
-          0 0,
-          var(--slider-pos, 50%) 0,
-          var(--slider-pos, 50%) 100%,
-          0 100%
-        );
-      }
+/* Smooth Slider Clip Path */
+.slider-clip {
+  clip-path: polygon(
+    0 0,
+    var(--slider-pos, 50%) 0,
+    var(--slider-pos, 50%) 100%,
+    0 100%
+  );
+}

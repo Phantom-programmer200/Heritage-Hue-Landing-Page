@@ -388,14 +388,13 @@
 
           <!-- Dual-Mode Interactive Toggle Controls -->
           <div
-            class="inline-flex items-center w-[480px] max-w-full p-1.5 rounded-full bg-parchment/10 border border-parchment/20 backdrop-blur-md mb-12 box-border"
+            class="inline-flex items-center w-full max-w-[440px] p-1.5 rounded-full bg-parchment/10 border border-parchment/20 backdrop-blur-md mb-8 box-border mx-auto"
           >
             <button
               onclick="switchHeroMode('vibe')"
               id="tab-vibe"
-              class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs uppercase tracking-wider font-semibold transition-all duration-300 bg-terracotta text-parchment shadow-lg shrink-0 whitespace-nowrap"
+              class="flex-1 flex items-center justify-center gap-1 px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs uppercase tracking-wider font-semibold transition-all duration-300 bg-terracotta text-parchment shadow-lg shrink-0 whitespace-nowrap"
             >
-              <!-- Bootstrap Icon: bi-stars -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-4 h-4 shrink-0"
@@ -406,18 +405,18 @@
                   d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936c-.11.33-.576.33-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645c-.33-.11-.33-.576 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69a1.73 1.73 0 0 0-1.097-1.097l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
                 />
               </svg>
-              <span>Vibe Collection Matcher</span>
+              <span class="inline sm:hidden truncate">Vibe Matcher</span>
+              <span class="hidden sm:inline truncate">Vibe Matcher</span>
             </button>
 
             <button
               onclick="switchHeroMode('quiz')"
               id="tab-quiz"
-              class="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-full text-xs uppercase tracking-wider font-semibold text-parchment/70 hover:text-parchment transition-all duration-300 shrink-0 whitespace-nowrap"
+              class="flex-1 flex items-center justify-center gap-1 px-2.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs uppercase tracking-wider font-semibold text-parchment/70 hover:text-parchment transition-all duration-300 shrink-0 whitespace-nowrap"
             >
-              <!-- Bootstrap Icon: bi-hourglass-split -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-4 h-4 shrink-0"
+                class="w-3.5 h-3.5 shrink-0"
                 fill="currentColor"
                 viewBox="0 0 16 16"
               >
@@ -425,7 +424,8 @@
                   d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.79 1.011 1.491v.7c0 .701-.478 1.235-1.011 1.491A3.5 3.5 0 0 0 4.5 14v1h7v-1a3.5 3.5 0 0 0-1.989-3.158C8.978 10.586 8.5 10.052 8.5 9.351v-.7c0-.701.478-1.235 1.011-1.491A3.5 3.5 0 0 0 11.5 3V2z"
                 />
               </svg>
-              <span>3-Sec Gift Selector</span>
+              <span class="inline sm:hidden truncate">Gift Selector</span>
+              <span class="hidden sm:inline truncate">3-Sec Gift Selector</span>
             </button>
           </div>
 
